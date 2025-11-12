@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home · Moje Hobby</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container topbar">
+        <a class="brand" href="index.html" aria-label="Strona główna">
+          <span class="logo" aria-hidden="true"></span>
+          <span>Moje Hobby</span>
+        </a>
+        <nav aria-label="Główna nawigacja">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="controls">
+          <span class="clock" aria-live="polite" title="Zegar"></span>
+          <button class="theme-toggle" type="button">🌓 Motyw</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="hero">
+          <div class="card">
+            <h1>Krótko o mnie &#9995;</h1>
+            <p>
+              Nazywam się Szymon Potępa i jestem studentem II roku Informatyki
+              na AGH w Krakowie. Poniżej możecie zapoznać się z moimi
+              największymi zainteresowaniami oraz bezpośrednio się ze mną
+              skontaktować poprzez formularz kontaktowy.
+            </p>
+            <p>
+              <a class="btn" href="galeria.html">Zobacz moją galerię</a>
+              <a class="btn" href="kontakt.html" style="margin-left: 8px"
+                >Napisz do mnie</a
+              >
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="images/autoportret.png"
+              style="width: 100%; border-radius: 12px"
+            />
+            <p style="margin: 10px 0 0; color: var(--text); font-size: 14px">
+              Autoportret
+            </p>
+          </div>
+        </section>
+
+        <section style="margin-top: 24px">
+          <h2>Moje hobby:</h2>
+          <div class="grid-3">
+            <article class="card">
+              <h3>Programowanie &#128187;</h3>
+              <p>
+                Pisanie kodu zaspokaja moją wewnętrzną potrzebe wysiłku
+                intelektualnego , a przy okazji sprawia mi ogrom satysfakcji.
+                Startując w C++ , poprzez Pythona , finalnie piszę w Javie ,w
+                której czuje się najlepiej.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Enduro &#9968;</h3>
+              <p>
+                Jazda na rowerze po górach ze znajomymi to jedna z moich
+                ulubionynch form aktywnego spędzania czasu. Idealnymi
+                lokalizacjami pod moje umiejętności są Szczyrk i Kasina.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Boks &#129354;</h3>
+              <p>
+                Trenuje rekreacyjnie od ponad 2 lat boks. Dzięki niemu buduję
+                swój charakter i sylwetkę, a dodatkowo pozwala mi on na
+                wyzwolenie z siebie negatywnych emocji.
+              </p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">© 2025 Szymon Potępa</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

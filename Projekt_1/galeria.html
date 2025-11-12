@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria · Moje Hobby</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container topbar">
+        <a class="brand" href="index.html" aria-label="Strona główna">
+          <span class="logo" aria-hidden="true"></span>
+          <span>Moje Hobby</span>
+        </a>
+        <nav aria-label="Główna nawigacja">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="controls">
+          <span class="clock" aria-live="polite" title="Zegar"></span>
+          <button class="theme-toggle" type="button">🌓 Motyw</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section>
+          <h1>Galeria</h1>
+          <p>
+            <button id="toggle-captions" class="btn" type="button">
+              Pokaż/ukryj podpisy
+            </button>
+          </p>
+          <div class="gallery" role="list">
+            <figure role="listitem">
+              <img src="images/boks.png" alt="Rękawice bokserskie" />
+              <figcaption>Rękawice bokserskie</figcaption>
+            </figure>
+            <figure role="listitem">
+              <img src="images/mtb.png" alt="Bikepark Szosów" />
+              <figcaption>Bikepark Szosów</figcaption>
+            </figure>
+            <figure role="listitem">
+              <img src="images/java.png" alt="Kod w javie" />
+              <figcaption>Kod w Javie</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section style="margin-top: 28px">
+          <h2>Krótki filmik z Lasu Wolskiego w Krakowie</h2>
+          <video controls width="100%" poster="images/miniaturka.png">
+            <source src="videos/jump.mp4" type="video/mp4" />
+            Twoja przeglądarka nie wspiera &lt;video&gt;.
+          </video>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">© 2025 Szymon Potępa</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
